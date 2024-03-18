@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Generate | 48/100 Projects By CodeBustler</title>
+    <link rel="stylesheet" href="css/otp.css" />
+    <script
+      src="https://kit.fontawesome.com/81d73e8e4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>OTP Generate</h2>
+      <div id="otp">
+        <img
+          src="https://i.postimg.cc/m2C6d1yn/password.png"
+          alt=""
+          width="100px"
+        />
+      </div>
+      <button id="btn" onclick="otpGenerate()">Get OTP</button>
+    </div>
+    
+    <!-- End HTML -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>

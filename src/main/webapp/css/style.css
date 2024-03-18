@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* Reset box model for all elements */
+* {
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Navigation styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1e385d; /* Dark blue background */
+}
+
+li {
+  display: inline-block;
+  margin-right: 15px; /* Add some spacing between list items */
+}
+
+li a {
+  color: #e5e5e5;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+li a:hover {
+  background-color: #405d80; /* Darker blue background on hover */
+}
+
+/* Blinking text animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 0.8s steps(1, end) infinite;
+}
+
+/* Button styles */
+.button {
+  background-color: #405d80;
+  border: none;
+  color: #f9f9f9;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Input and form styles */
+input[type=text], input[type=password], input[type=number], input[type=email],
+select, input[type=date], input[type=datetime-local] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Add spacing below label */
+}
+
+input[readonly] {
+  background-color: #f0f0f0; /* Light gray background for readonly */
+  color: #666; /* Gray text color */
+  cursor: not-allowed; /* Change cursor to indicate it's not editable */
+}
